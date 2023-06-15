@@ -9,7 +9,7 @@ export default defineConfig({
   experimental: {
     assets: true
   },
-  site: 'https://christinetham.github.io',
+  site: 'https://christham.net',
   base: 'astro-tailwind',
   integrations: [sitemap(), tailwind({
     // Example: Disable injecting a basic `base.css` import on every page.

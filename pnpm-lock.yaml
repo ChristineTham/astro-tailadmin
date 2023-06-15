@@ -4,9 +4,6 @@ dependencies:
   '@alpinejs/persist':
     specifier: ^3.12.2
     version: 3.12.2
-  '@astrojs/alpinejs':
-    specifier: ^0.2.2
-    version: 0.2.2(@types/alpinejs@3.7.1)(alpinejs@3.12.2)
   '@astrojs/rss':
     specifier: ^2.4.3
     version: 2.4.3
@@ -96,16 +93,6 @@ packages:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.18
-    dev: false
-
-  /@astrojs/alpinejs@0.2.2(@types/alpinejs@3.7.1)(alpinejs@3.12.2):
-    resolution: {integrity: sha512-YX224PPxv+RymzOKFspY1K1aw7rCT2qOuUrRgfnDgwuQ2GMe9S13zmBzIC7BrkK4kNbh+6nWZW9lXVkGlO6mww==}
-    peerDependencies:
-      '@types/alpinejs': ^3.0.0
-      alpinejs: ^3.0.0
-    dependencies:
-      '@types/alpinejs': 3.7.1
-      alpinejs: 3.12.2
     dev: false
 
   /@astrojs/compiler@1.5.1:

@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from "@astrojs/sitemap";
-import alpinejs from "@astrojs/alpinejs";
+// import alpinejs from "@astrojs/alpinejs";
 
 import tailwind from "@astrojs/tailwind";
 
@@ -10,7 +10,7 @@ export default defineConfig({
     assets: true
   },
   site: 'https://astro-base.netlify.app',
-  integrations: [sitemap(), alpinejs(), tailwind({
+  integrations: [sitemap(), tailwind({
     // Example: Disable injecting a basic `base.css` import on every page.
     // Useful if you need to define and/or import your own custom `base.css`.
     config: { applyBaseStyles: false },

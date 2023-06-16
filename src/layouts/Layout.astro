@@ -5,11 +5,10 @@ import Sidebar from '../components/sidebar.astro'
 import Header from '../components/header.astro'
 
 export interface Props {
-  title: string
-  page: string
+  pageName: string
 }
 
-const { title, page } = Astro.props
+const { pageName } = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -30,11 +29,11 @@ const { title, page } = Astro.props
       href={`${import.meta.env.BASE_URL}rss.xml`}
     />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>{pageName} | TailAdmin - Tailwind CSS Admin Dashboard Template</title>
     <meta name="description" content="Astro TailAdmin" />
   </head>
   <body
-    x-data={`{ page: '${page}', 'loaded': true, 'darkMode': true, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }`}
+    x-data={`{ page: '${pageName}', 'loaded': true, 'darkMode': true, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }`}
     x-init=" darkMode = JSON.parse(localStorage.getItem('darkMode')); $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
     :class="{'dark text-bodydark bg-boxdark-2': darkMode === true}"
   >

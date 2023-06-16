@@ -44,7 +44,7 @@ import Logo from '../assets/logo/logo.svg'
               class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
               href="#"
               @click.prevent="selected = (selected === 'Dashboard' ? '':'Dashboard')"
-              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Dashboard') || (page === 'ecommerce' || page === 'analytics') }"
+              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Dashboard') || (page === 'eCommerce Dashboard' || page === 'analytics') }"
             >
               <svg
                 class="fill-current"
@@ -94,7 +94,7 @@ import Logo from '../assets/logo/logo.svg'
                   <a
                     class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                     href={import.meta.env.BASE_URL}
-                    :class="page === 'ecommerce' && '!text-white'">eCommerce</a
+                    :class="page === 'eCommerce Dashboard' && '!text-white'">eCommerce</a
                   >
                 </li>
               </ul>
@@ -109,7 +109,7 @@ import Logo from '../assets/logo/logo.svg'
               class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
               href={import.meta.env.BASE_URL + 'calendar'}
               @click="selected = (selected === 'Calendar' ? '':'Calendar')"
-              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Calendar') && (page === 'calendar') }"
+              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Calendar') && (page === 'Calendar') }"
             >
               <svg
                 class="fill-current"
@@ -135,8 +135,8 @@ import Logo from '../assets/logo/logo.svg'
               class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
               href={import.meta.env.BASE_URL + 'profile'}
               @click="selected = (selected === 'Profile' ? '':'Profile')"
-              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Profile') && (page === 'profile') }"
-              :class="page === 'profile' && 'bg-graydark'"
+              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Profile') && (page === 'Profile') }"
+              :class="page === 'Profile' && 'bg-graydark'"
             >
               <svg
                 class="fill-current"
@@ -165,7 +165,7 @@ import Logo from '../assets/logo/logo.svg'
               class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
               href="#"
               @click.prevent="selected = (selected === 'Forms' ? '':'Forms')"
-              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Forms') || (page === 'formElements' || page === 'formLayout') }"
+              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Forms') || (page === 'Form Elements' || page === 'Form Layout') }"
             >
               <svg
                 class="fill-current"
@@ -218,14 +218,14 @@ import Logo from '../assets/logo/logo.svg'
                   <a
                     class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                     href={import.meta.env.BASE_URL + 'form-elements'}
-                    :class="page === 'formElements' && '!text-white'">Form Elements</a
+                    :class="page === 'Form Elements' && '!text-white'">Form Elements</a
                   >
                 </li>
                 <li>
                   <a
                     class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                     href={import.meta.env.BASE_URL + 'form-layout'}
-                    :class="page === 'formLayout' && '!text-white'">Form Layout</a
+                    :class="page === 'Form Layout' && '!text-white'">Form Layout</a
                   >
                 </li>
               </ul>
@@ -240,7 +240,7 @@ import Logo from '../assets/logo/logo.svg'
               class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
               href={import.meta.env.BASE_URL + 'tables'}
               @click="selected = (selected === 'Tables' ? '':'Tables')"
-              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Tables') && (page === 'tables') }"
+              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Tables') && (page === 'Tables') }"
             >
               <svg
                 class="fill-current"
@@ -274,8 +274,8 @@ import Logo from '../assets/logo/logo.svg'
               class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
               href={import.meta.env.BASE_URL + 'settings'}
               @click="selected = (selected === 'Settings' ? '':'Settings')"
-              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Settings') && (page === 'settings') }"
-              :class="page === 'settings' && 'bg-graydark'"
+              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Settings') && (page === 'Settings') }"
+              :class="page === 'Settings' && 'bg-graydark'"
             >
               <svg
                 class="fill-current"
@@ -319,7 +319,7 @@ import Logo from '../assets/logo/logo.svg'
               class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
               href={import.meta.env.BASE_URL + 'chart'}
               @click="selected = (selected === 'Chart' ? '':'Chart')"
-              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Chart') && (page === 'chart') }"
+              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Chart') && (page === 'Chart') }"
             >
               <svg
                 class="fill-current"
@@ -356,7 +356,7 @@ import Logo from '../assets/logo/logo.svg'
               class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
               href="#"
               @click.prevent="selected = (selected === 'UiElements' ? '':'UiElements')"
-              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'UiElements') || (page === 'alerts' || page === 'buttons' || page === 'card' || page === 'tabs' || page === 'modals') }"
+              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'UiElements') || (page === 'Alerts' || page === 'Buttons' || page === 'card' || page === 'tabs' || page === 'modals') }"
             >
               <svg
                 class="fill-current"
@@ -411,14 +411,14 @@ import Logo from '../assets/logo/logo.svg'
                   <a
                     class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                     href={import.meta.env.BASE_URL + 'alerts'}
-                    :class="page === 'alerts' && '!text-white'">Alerts</a
+                    :class="page === 'Alerts' && '!text-white'">Alerts</a
                   >
                 </li>
                 <li>
                   <a
                     class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                     href={import.meta.env.BASE_URL + 'buttons'}
-                    :class="page === 'buttons' && '!text-white'">Buttons</a
+                    :class="page === 'Buttons' && '!text-white'">Buttons</a
                   >
                 </li>
               </ul>
@@ -433,7 +433,7 @@ import Logo from '../assets/logo/logo.svg'
               class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
               href="#"
               @click.prevent="selected = (selected === 'AuthPages' ? '':'AuthPages')"
-              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'AuthPages') || (page === 'register' || page === 'login' || page === 'forgetPassword') }"
+              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'AuthPages') || (page === 'Sign Up' || page === 'Sign In' || page === 'forgetPassword') }"
             >
               <svg
                 class="fill-current"
@@ -485,14 +485,14 @@ import Logo from '../assets/logo/logo.svg'
                   <a
                     class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                     href={import.meta.env.BASE_URL + 'signin'}
-                    :class="page === 'signin' && '!text-white'">Sign In</a
+                    :class="page === 'Sign In' && '!text-white'">Sign In</a
                   >
                 </li>
                 <li>
                   <a
                     class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                     href={import.meta.env.BASE_URL + 'signup'}
-                    :class="page === 'signup' && '!text-white'">Sign Up</a
+                    :class="page === 'Sign Up' && '!text-white'">Sign Up</a
                   >
                 </li>
               </ul>

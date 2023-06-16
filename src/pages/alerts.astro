@@ -1,21 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import Breadcrumb from '../components/breadcrumb.astro'
+const pageName = 'Alerts'
 ---
 
-<Layout title="Alerts | TailAdmin - Tailwind CSS Admin Dashboard Template" page="alerts">
+<Layout {pageName}>
   <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
-    <!-- Breadcrumb Start -->
-    <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-      <h2 class="text-title-md2 font-bold text-black dark:text-white">Alerts</h2>
-
-      <nav>
-        <ol class="flex items-center gap-2">
-          <li><a class="font-medium" href="index.html">Dashboard /</a></li>
-          <li class="font-medium text-primary">Alerts</li>
-        </ol>
-      </nav>
-    </div>
-    <!-- Breadcrumb End -->
+    <Breadcrumb {pageName} />
 
     <div
       class="rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6 xl:p-9"
